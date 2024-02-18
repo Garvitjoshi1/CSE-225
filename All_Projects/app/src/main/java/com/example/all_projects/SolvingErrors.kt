@@ -1,8 +1,7 @@
 package com.example.all_projects
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.all_projects.R
+import androidx.appcompat.app.AppCompatActivity
 import java.util.Collections
 
 class SolvingErrors : AppCompatActivity() {
@@ -17,10 +16,9 @@ class SolvingErrors : AppCompatActivity() {
 
     }
 
-
     private fun sortList(list: List<Int>){
-        for(i in 0..list.size - 1){
-            for(j in 0..list.size - 1){
+        for(i in list.indices){
+            for(j in list.indices){
                 if(list[j] > list[j+1]){
                     Collections.swap(list, j, j+1)
                 }
@@ -28,3 +26,8 @@ class SolvingErrors : AppCompatActivity() {
         }
     }
 }
+
+/*
+To check for error the app is crashing go to Logcat --> then search of (Caused by) --> get exact reason,
+        --> find for links in blue color for file, there exact error lies.
+        */
