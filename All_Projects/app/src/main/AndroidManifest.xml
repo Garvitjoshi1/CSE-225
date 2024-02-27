@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -11,22 +11,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.All_Projects"
-        tools:targetApi="31" >
+        tools:targetApi="31">
         <activity
-            android:name=".HelloWorld"
-            android:exported="true" />
-
-
+            android:name=".Addition_Calculator"
+            android:exported="false" />
         <activity
-            android:name=".SolvingErrors"
-            android:exported="true" >
+            android:name=".Edit__Text"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".Text_View"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Button_Date_Picker"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Date_Picker"
+            android:exported="true"></activity>
+        <activity
+            android:name=".buttons"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Constraint_Layout"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Linear_Layout"
+            android:exported="true" />
+        <activity
+            android:name=".HelloWorld"
+            android:exported="true" />
+        <activity
+            android:name=".SolvingErrors"
+            android:exported="true" />
     </application>
 
 </manifest>
