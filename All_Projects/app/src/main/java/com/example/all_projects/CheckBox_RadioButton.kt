@@ -3,9 +3,11 @@ package com.example.all_projects
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Addition_Calculator : AppCompatActivity() {
+class CheckBox_RadioButton : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_addition_calculator)
+        setContentView(R.layout.activity_check_box_radio_button)
+
+
     }
 }

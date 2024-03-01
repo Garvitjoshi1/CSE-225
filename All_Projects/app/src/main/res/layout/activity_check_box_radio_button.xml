@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckBox_RadioButton">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="401dp"
+        android:layout_height="119dp"
+        android:text="What would you want in burger?"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:padding="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1612dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview">
+
+        <RadioButton
+            android:id="@+id/veggie"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Veggie"
+            android:checked="true"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/cheese"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Cheese"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/sauce"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Sauce"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/onion"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:text="Onion"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tomato"
+        tools:layout_editor_absoluteX="41dp">
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/tomato"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:text="Tomato"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/nothing"
+        tools:layout_editor_absoluteX="34dp">
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/nothing"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:text="Nothing"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="371dp">
+    </CheckBox>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="434dp"
+        tools:layout_editor_absoluteY="564dp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order">
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
