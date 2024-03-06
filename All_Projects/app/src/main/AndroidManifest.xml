@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
@@ -15,35 +16,46 @@
         android:theme="@style/Theme.All_Projects"
         tools:targetApi="31">
         <activity
-            android:name=".Ringtone"
-            android:exported="true" >
+            android:name=".CustomToast"
+            android:exported="false" />
+        <activity
+            android:name=".Video"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".NotifMain"
+            android:exported="true" />
+        <activity
+            android:name=".Notif"
+            android:exported="true" />
+        <activity
+            android:name=".Toast_and_Context"
+            android:exported="false" />
+        <activity
+            android:name=".Ringtone"
+            android:exported="true"></activity>
+        <activity
+            android:name=".AlarmManagerBroadcast"
+            android:exported="true" />
 
         <receiver
             android:name=".AlarmManagerBroadcast"
-            android:exported="true">
+            android:exported="true" />
 
-        </receiver>
-
-        <activity
-            android:name=".AlarmManagerBroadcast"
-            android:exported="true">
-        </activity>
         <activity
             android:name=".AlarmManager"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MyJobService"
             android:exported="false" />
         <activity
             android:name=".JobScheduler"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Time_Date_Picker"
             android:exported="true" />
@@ -52,7 +64,7 @@
             android:exported="true" />
         <activity
             android:name=".CheckBox_RadioButton"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Image_View"
             android:exported="true" />

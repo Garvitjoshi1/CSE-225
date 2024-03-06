@@ -15,17 +15,18 @@ class Ringtone : AppCompatActivity() {
 
     fun playRingtone() {
         mediaPlayer = MediaPlayer.create(this, R.raw.ringtone)
-        mediaPlayer!!.isLooping = true
-        mediaPlayer!!.start()
+        mediaPlayer?.isLooping = true
+        mediaPlayer?.start()
         Toast.makeText(this@Ringtone, "Playing Ringtone", Toast.LENGTH_SHORT).show()
     }
 
     fun stopRingtone() {
-        if (mediaPlayer != null) {
-            mediaPlayer!!.stop()
-            mediaPlayer!!.release()
+        mediaPlayer?.let {
+            it.stop()
+            it.release()
             mediaPlayer = null
             Toast.makeText(this@Ringtone, "Ringtone Stopped", Toast.LENGTH_SHORT).show()
         }
     }
+
 }
