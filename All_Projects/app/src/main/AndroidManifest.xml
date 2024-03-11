@@ -16,10 +16,13 @@
         android:theme="@style/Theme.All_Projects"
         tools:targetApi="31">
         <activity
-            android:name=".CustomToast"
+            android:name="Fragment.Static_Fragment"
             android:exported="false" />
         <activity
-            android:name=".Video"
+            android:name=".Passing_Data_2"
+            android:exported="true" />
+        <activity
+            android:name=".Pass_Data"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,17 +31,23 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".Intents"
+            android:exported="true" />
+        <activity
+            android:name=".Intent_2"
+            android:exported="true" />
+        <activity
+            android:name=".Video"
+            android:exported="true" />
+        <activity
             android:name=".NotifMain"
             android:exported="true" />
         <activity
             android:name=".Notif"
             android:exported="true" />
         <activity
-            android:name=".Toast_and_Context"
-            android:exported="false" />
-        <activity
             android:name=".Ringtone"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".AlarmManagerBroadcast"
             android:exported="true" />
