@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Static_Fragment">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.example.fragments.Static_Fragment"
+        android:id = "@+id/fragment1"
+        android:layout_weight="0.5">
+    </fragment>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EA0A0A"
+        android:layout_weight="0.97">
+    </View>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id = "@+id/fragment2"
+        android:layout_weight="0.5">
+    </fragment>
+
+
+
+</LinearLayout>

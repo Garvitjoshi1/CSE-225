@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="163dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/compact"
+        app:layout_constraintEnd_toStartOf="@+id/image3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onBookButtonClick"
+        android:text="Book"
+        app:layout_constraintStart_toStartOf="@id/image1"
+        app:layout_constraintTop_toBottomOf="@id/image1" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="163dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/auto1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/image4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onBookButtonClick"
+        android:text="Book"
+        app:layout_constraintStart_toStartOf="@id/image2"
+        app:layout_constraintTop_toBottomOf="@id/image2" />
+
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="163dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/sedan_medium"
+        app:layout_constraintEnd_toStartOf="@+id/image5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onBookButtonClick"
+        android:text="Book"
+        app:layout_constraintStart_toStartOf="@id/image3"
+        app:layout_constraintTop_toBottomOf="@id/image3" />
+
+    <ImageView
+        android:id="@+id/image4"
+        android:layout_width="163dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/auto2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/image2"
+        app:layout_constraintTop_toBottomOf="@id/image1" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onBookButtonClick"
+        android:text="Book"
+        app:layout_constraintStart_toStartOf="@id/image4"
+        app:layout_constraintTop_toBottomOf="@id/image4" />
+
+    <ImageView
+        android:id="@+id/image5"
+        android:layout_width="163dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="84dp"
+        android:src="@drawable/sedan_premium"
+        app:layout_constraintEnd_toEndOf="@+id/image7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onBookButtonClick"
+        android:text="Book"
+        app:layout_constraintStart_toStartOf="@id/image5"
+        app:layout_constraintTop_toBottomOf="@id/image5" />
+
+    <ImageView
+        android:id="@+id/image6"
+        android:layout_width="163dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/auto3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/image4"
+        app:layout_constraintTop_toBottomOf="@id/image3" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onBookButtonClick"
+        android:text="Book"
+        app:layout_constraintStart_toStartOf="@id/image6"
+        app:layout_constraintTop_toBottomOf="@id/image6" />
+
+    <ImageView
+        android:id="@+id/image7"
+        android:layout_width="163dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/suv"
+        app:layout_constraintEnd_toEndOf="@+id/image5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image5" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onBookButtonClick"
+        android:text="Book"
+        app:layout_constraintStart_toStartOf="@id/image7"
+        app:layout_constraintTop_toBottomOf="@id/image7" />
+
+    <ImageView
+        android:id="@+id/image8"
+        android:layout_width="163dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/auto4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/image6"
+        app:layout_constraintTop_toBottomOf="@id/image5" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onBookButtonClick"
+        android:text="Book"
+        app:layout_constraintStart_toStartOf="@id/image8"
+        app:layout_constraintTop_toBottomOf="@id/image8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
