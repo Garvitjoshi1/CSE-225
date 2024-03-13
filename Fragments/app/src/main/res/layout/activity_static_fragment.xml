@@ -5,30 +5,19 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Static_Fragment">
 
-    <fragment
+    <ListView
+        android:id="@+id/lst"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        class="com.example.fragments.Static_Fragment"
-        android:id = "@+id/fragment1"
-        android:layout_weight="0.5">
-    </fragment>
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
-    <View
+    <FrameLayout
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#EA0A0A"
-        android:layout_weight="0.97">
-    </View>
-
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id = "@+id/fragment2"
-        android:layout_weight="0.5">
-    </fragment>
-
-
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
 </LinearLayout>

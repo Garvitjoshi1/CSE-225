@@ -2,15 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/main_fragment_2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Static_Fragment_2">
 
     <TextView
+        android:id="@+id/txtdisplay"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/list"
-        />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
