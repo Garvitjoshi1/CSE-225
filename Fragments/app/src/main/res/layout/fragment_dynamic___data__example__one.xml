@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dynamic_Fragment_Data_Example_One">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_weight="2"
+        android:text="I am Fragment One"
+        android:gravity="center"
+        android:background="#05F617"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <EditText
+        android:id="@+id/edtTxt"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:text="Message"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="#F6003B">
+    </EditText>
+
+</LinearLayout>

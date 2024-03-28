@@ -8,19 +8,17 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Red"
-        android:onClick="changeColor"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="15dp">
-    </Button>
+        android:layout_marginTop="15dp"
+        android:onClick="changeColor"
+        android:text="Red"></Button>
 
     <Button
+        android:id="@+id/frag1BtnGreen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp"
-        android:id="@+id/frag1BtnGreen"
-        android:text="Green">
-    </Button>
+        android:text="Green"></Button>
 
 </LinearLayout>

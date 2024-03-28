@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Fragments"
         tools:targetApi="31">
         <activity
-            android:name=".Fragment_Static_Color_Main"
+            android:name=".Dynamic_Fragment_Data_Example"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,13 +21,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".DynamicFragmentOrientationExample"
+            android:exported="true"/>
+
+        <activity
+            android:name="Static_Fragment.Fragment_Static_Example"
+            android:exported="false" />
+        <activity
+            android:name=".Fragment_Static_Color_Main"
+            android:exported="true" />
         <activity
             android:name=".Static_Fragment_2"
             android:exported="true" />
         <activity
             android:name=".Static_Fragment"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
